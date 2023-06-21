@@ -10,7 +10,9 @@ Add in the Connect-Azaccount if needed
 Also optionally add in the relevant subscription etc 
 Connect-AzAccount -Subscription "459d9dbf-b57b-55c4-96ef-f21070b9eaab"
 
-If running using Azure Cloud Shell, specify the IP.  The API call below will detect the public IP of the Azure resource, not where you are actually wanting to RDP from
+If running using Azure Cloud Shell, specify the IP.  
+The API call below will detect the public IP of the Azure resource, not where you are actually wanting to RDP from
 $MyIPAddress = @("131.107.2.200")
+
 If you run this locally, an option is to query and API to get your public IP
 #$MyIPAddress = Invoke-RestMethod ipinfo.io/ip
